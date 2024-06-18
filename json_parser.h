@@ -1,3 +1,5 @@
+#ifndef JSON_PARSER_H
+#define JSON_PARSER_H
 
 #undef NULL
 #define NULL ((void*)0)
@@ -60,3 +62,5 @@ void        json_string_set(struct json_value_st* json_value, const char* string
 
 double json_number(const struct json_value_st* json_value);
 void   json_number_set(struct json_value_st* json_value, double n);
+
+#endif
